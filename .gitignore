@@ -27,6 +27,12 @@
 *.lib
 
 # Executables
-*.exe
-*.out
-*.app
+
+# Codelite stuff
+.codelite/
+*.workspace
+compile_flags.txt
+Makefile
+*.mk
+*.project
+tags

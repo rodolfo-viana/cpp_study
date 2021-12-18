@@ -1,0 +1,5 @@
+# On Windows
+g++ -Wall -std=c++17 main.cpp -o firstexe.exe
+
+# On Linux, MacOS
+g++ -Wall -std=c++17 main.cpp -o firstexe
