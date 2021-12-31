@@ -30,7 +30,7 @@
 
  /* Scenario:
   * Rodolfo has a room cleaning service.
-  * It costs 30 for room.
+  * It costs 30.99 for room.
   * Sales tax rate is 6%.
   *
   * Prompt user to type the number of rooms he
@@ -41,12 +41,12 @@
 using namespace std;
 
 int main() {
-    const short price_room {30};
+    const double price_room {30}; // could be short but money may get decimals
     const double tax_rate {0.06};
     int num_rooms;
     cout << "Enter how many rooms you want to be cleaned: ";
     cin >> num_rooms;
-    int total_service {num_rooms * price_room};
+    double total_service {num_rooms * price_room};
     double total_tax {total_service * tax_rate};
     cout << "PRICE" << endl << "-----" << endl;
     cout << "Number of rooms: " << num_rooms << endl;
