@@ -45,6 +45,21 @@ int main() {
     cout << "But let's change it: I want my second vowel to be 'u'" << endl;
     vowels[1] = 'u';
     cout << "Now the second vowel is " << vowels[1] << endl;
+    // Out-of-bounds error
+    /* I created a 5-element array and can manipulate these
+     * elems. But if I try to add a sixth element, it will
+     * be compiled and built but it 1. will crash during run,
+     * or 2. will assign a "junk value", any value stored in
+     * memory.
+     *
+     * Example:
+     * cout << "Type a vowel: ";
+     * cin >> vowels[5];
+     * cout << vowels << endl;
+     */
+
+    short even[] {2, 4, 6, 8, 10};
+    cout << "The memory address of the array 'even' is: " << even << endl;
     return 0;
 }
 
