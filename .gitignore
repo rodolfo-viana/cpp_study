@@ -36,3 +36,4 @@ Makefile
 *.mk
 *.project
 tags
+*.txt
