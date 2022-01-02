@@ -43,8 +43,18 @@ int main() {
     cout << "The elem in position 0 is " << vowels.at(0) << endl;
     cout << "The elem in position 1 is " << vowels.at(1) << endl;
     cout << "Out-of-range exception and error are thrown when there is no elem at that position" << endl;
-    cout << "If we run 'vowels.at(3)', we get this message:" << endl;
+    cout << "If we run 'vowels.at(2)', we get this message:" << endl;
     cout << "terminate called after throwing an instance of 'std::out_of_range'" << endl;
-    cout << "  what():  vector::_M_range_check: __n (which is 3) >= this->size() (which is 2)" << endl;
+    cout << "  what():  vector::_M_range_check: __n (which is 3) >= this->size() (which is 2)" << endl << endl;
+
+    cout << "And now, a vector of vectors!" << endl;
+    vector <vector <int>> scores {
+        {1, 2, 3},
+        {1, 3, 4},
+        {2, 4, 5}
+    };
+    cout << "Elems can be accessed using '.at()' twice: first for rows, then for cols:" << endl;
+    cout << "Second row, third column: " << scores.at(1).at(2) << endl;
+    cout << "Third row, first column: " << scores.at(2).at(0) << endl;
     return 0;
 }
