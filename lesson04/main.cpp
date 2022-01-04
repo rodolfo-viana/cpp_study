@@ -11,7 +11,7 @@ int main() {
     int fav_number;
     cout << "Enter your favorite number: ";
     cin >> fav_number;
-    cout << "Really? " << fav_number 
+    cout << "Really? " << fav_number
          << " is my favorite number too!" << endl;
     return 0;
 }

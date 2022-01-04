@@ -32,4 +32,3 @@ int main() {
          << "m2.\n";
     return 0;
 }
-
