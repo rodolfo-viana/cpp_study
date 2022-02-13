@@ -82,15 +82,14 @@ int main() {
      * Example: num1 is 30000 (short), num2 is 1000
      * (short). Although both are short, the product
      * (30000 * 1000) is not. Let's try:
-     */
-    short num1 {30000};
-    short num2 {1000};
-    short product {num1 * num2};
-
-    cout << "The value of product should be 30M, but the value shown is "
-         << product << "\n, which is wrong. It is an overflow." << endl;
-
-    /* 2.
+     *
+     * short num1 {30000};
+     * short num2 {1000};
+     * short product {num1 * num2};
+     * cout << "The value of product should be 30M, but the value shown is "
+     *      << product << "\n, which is wrong. It is an overflow." << endl;
+     *
+     * 2.
      * C-like initialization (=) allows overflow
      * when data type is not properly set.
      * Prefer using C++-list style initialization.
@@ -101,10 +100,11 @@ int main() {
      * be shown, but no error at all, although
      * the value will be altered. Let's check
      * with long var = 7600000000:
+     *
+     * long var = 7600000000;
+     * cout << "The number is 7.6B, but it is shown as " << var
+     *      << "\n. It is an overflow." << endl;
      */
-    long var = 7600000000;
-    cout << "The number is 7.6B, but it is shown as " << var
-         << "\n. It is an overflow." << endl;
 
     return 0;
 }
