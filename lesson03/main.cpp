@@ -3,7 +3,8 @@
 /* They process source code before the compiler
  * seizes it. Begin with # symbol.
  *
- * Example: #include -> it replaces the command
+ * Example:
+ * #include -> it replaces the command
  * after # with the file it refers to, then
  * recursively processes the file as well
  *
