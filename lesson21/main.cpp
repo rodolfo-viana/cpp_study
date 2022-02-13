@@ -6,7 +6,7 @@
  * - <
  * - <=
  * - <=> (C++20 only: if equal, 0; less than 0 on the left and greater on the right)
- * */
+ */
 #include <iostream>
 using namespace std;
 
